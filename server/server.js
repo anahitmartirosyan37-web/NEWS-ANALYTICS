@@ -8,49 +8,50 @@ import articleRoutes from "./routes/articles.js";
 import commentRoutes from "./routes/comments.js";
 import subscriberRoutes from "./routes/subscribers.js";
 
-
-dotenv.config({
-    path: "./server/.env",
-});
+dotenv.config();
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
-
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: [
+            "http://localhost:5173",
+            process.env.CLIENT_URL
+        ].filter(Boolean)
     })
 );
 
 app.use(express.json());
 
-await connectDB();
+// Подключаемся к базе перед обработкой запросов
+app.use(async (req, res, next) => {
+    try {
+        await connectDB();
+        next();
+    } catch (error) {
+        console.error("MongoDB connection error:", error);
+        res.status(500).json({
+            message: "Database connection failed"
+        });
+    }
+});
 
 app.use("/api/auth", authRoutes);
 app.use("/api/articles", articleRoutes);
 app.use("/api/articles", commentRoutes);
 app.use("/api/comments", commentRoutes);
-
-app.use(
-    "/api/subscribers",
-    subscriberRoutes
-);
+app.use("/api/subscribers", subscriberRoutes);
 
 app.get("/api", (req, res) => {
     res.json({
-        message: "News API is running",
+        message: "News API is running"
     });
 });
 
 app.use((req, res) => {
     res.status(404).json({
-        message: "API route not found",
+        message: "API route not found"
     });
 });
 
-app.listen(PORT, () => {
-    console.log(
-        `Server started on http://localhost:${PORT}`
-    );
-});
+export default app;

@@ -1,9 +1,9 @@
 {
-   "scripts": {
-      "dev": "vite",
-      "server": "node server.js",
-      "server:dev": "nodemon server.js"
-   },
+"scripts": {
+  "dev": "vite",
+  "server": "node start.js",
+  "server:dev": "nodemon start.js"
+},
    "dependencies": {
       "bcryptjs": "^3.0.3",
       "cors": "^2.8.6",
