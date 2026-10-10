@@ -1,0 +1,533 @@
+/* =========================================================
+   ECONOMY PAGE
+========================================================= */
+
+.economy-page {
+    width: 100%;
+    background: #ffffff;
+    color: #121212;
+}
+
+.economy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+
+/* =========================================================
+   ШАПКА РАЗДЕЛА
+========================================================= */
+
+.economy-hero {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.economy-hero-content {
+    background-color: #121212;
+    color: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 4px;
+
+    border-left: 5px solid #b81d24;
+}
+
+.economy-section-label {
+    display: inline-block;
+
+    background-color: #b81d24;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    padding: 3px 8px;
+
+    border-radius: 2px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.economy-hero h1 {
+    font-size: 32px;
+    font-weight: 900;
+
+    margin: 10px 0 8px 0;
+
+    line-height: 1.2;
+}
+
+.economy-hero p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #cccccc;
+}
+
+
+/* =========================================================
+   ЗАГОЛОВОК ЛЕНТЫ
+========================================================= */
+
+.economy-section-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    padding-bottom: 6px;
+
+    border-bottom: 2px solid #121212;
+}
+
+.economy-section-header h2 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    color: #121212;
+}
+
+.economy-section-header span {
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #b81d24;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ЛЕНТА НОВОСТЕЙ
+========================================================= */
+
+.economy-news-grid {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   НОВОСТЬ
+========================================================= */
+
+.economy-news-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 20px;
+
+    width: 100%;
+
+    padding: 20px 0;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #d6d6d6;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.economy-news-card:hover {
+    background-color: #fafafa;
+}
+
+
+/* =========================================================
+   КАРТИНКА
+========================================================= */
+
+.economy-news-image-wrapper {
+    width: 280px;
+    height: 170px;
+
+    background: #111111;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.economy-news-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.economy-news-card:hover .economy-news-image {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   КОНТЕНТ НОВОСТИ
+========================================================= */
+
+.economy-news-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.economy-news-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+
+    flex-wrap: wrap;
+}
+
+.economy-news-time {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #555555;
+}
+
+.economy-news-category {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #b81d24;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ЗАГОЛОВОК
+========================================================= */
+
+.economy-news-title {
+    margin: 0 0 10px 0;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    color: #121212;
+
+    transition: color 0.2s ease;
+}
+
+.economy-news-card:hover .economy-news-title {
+    color: #b81d24;
+}
+
+
+/* =========================================================
+   ОПИСАНИЕ
+========================================================= */
+
+.economy-news-description {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    color: #555555;
+}
+
+
+/* =========================================================
+   ЧИТАТЬ ДАЛЕЕ
+========================================================= */
+
+.economy-news-more {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #b81d24;
+
+    transition: transform 0.2s ease;
+}
+
+.economy-news-card:hover .economy-news-more {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   ЕСЛИ НЕТ НОВОСТЕЙ
+========================================================= */
+
+.economy-empty {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    border: 1px solid #d6d6d6;
+
+    background: #fafafa;
+}
+
+.economy-empty h3 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color: #121212;
+}
+
+.economy-empty p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #666666;
+}
+
+
+/* =========================================================
+   НИЖНЯЯ ССЫЛКА
+========================================================= */
+
+.economy-bottom {
+    padding-bottom: 40px;
+}
+
+.economy-back-home {
+    display: inline-block;
+
+    color: #121212;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    padding: 10px 16px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 3px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.economy-back-home:hover {
+    background-color: #b81d24;
+
+    border-color: #b81d24;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .economy-container {
+        padding: 25px 16px;
+    }
+
+    .economy-hero-content {
+        padding: 25px;
+    }
+
+    .economy-hero h1 {
+        font-size: 28px;
+    }
+
+    .economy-news-card {
+        grid-template-columns: 220px 1fr;
+
+        gap: 16px;
+
+        padding: 18px 0;
+    }
+
+    .economy-news-image-wrapper {
+        width: 220px;
+        height: 145px;
+    }
+
+    .economy-news-title {
+        font-size: 18px;
+    }
+
+    .economy-news-description {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .economy-container {
+        padding: 20px 14px;
+    }
+
+
+    /* Шапка */
+
+    .economy-hero-content {
+        padding: 22px;
+
+        border-left-width: 4px;
+    }
+
+    .economy-hero h1 {
+        font-size: 27px;
+
+        margin-top: 9px;
+    }
+
+    .economy-hero p {
+        font-size: 13px;
+    }
+
+
+    /* Заголовок */
+
+    .economy-section-header {
+        align-items: flex-end;
+
+        gap: 10px;
+    }
+
+    .economy-section-header h2 {
+        font-size: 18px;
+    }
+
+    .economy-section-header span {
+        font-size: 9px;
+    }
+
+
+    /* Новости */
+
+    .economy-news-card {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 16px 0;
+    }
+
+
+    /* Картинка */
+
+    .economy-news-image-wrapper {
+        width: 100%;
+
+        height: 220px;
+    }
+
+
+    /* Контент */
+
+    .economy-news-content {
+        width: 100%;
+    }
+
+    .economy-news-title {
+        font-size: 18px;
+
+        line-height: 1.3;
+    }
+
+    .economy-news-description {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+    .economy-news-more {
+        margin-top: 9px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .economy-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .economy-hero-content {
+        padding: 20px;
+    }
+
+    .economy-hero h1 {
+        font-size: 25px;
+    }
+
+    .economy-news-image-wrapper {
+        height: 190px;
+    }
+
+    .economy-news-title {
+        font-size: 17px;
+    }
+
+    .economy-news-description {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,592 @@
+/* =========================================================
+   POLITICS PAGE
+   BBC / NEWS STYLE
+========================================================= */
+
+.home-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 25px 60px;
+    box-sizing: border-box;
+    color: #121212;
+    background: #fff;
+}
+
+/* =========================================================
+   ШАПКА РАЗДЕЛА
+========================================================= */
+
+.section-header-banner {
+    padding: 35px 0 28px;
+    border-bottom: 5px solid #b81d24;
+    margin-bottom: 30px;
+}
+
+.section-category-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #b81d24;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-main-title {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.section-main-desc {
+    max-width: 760px;
+    margin: 15px 0 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   ГЛАВНЫЙ БАННЕР
+========================================================= */
+
+.bbc-hero-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(420px, 1fr);
+    min-height: 360px;
+    background: #121212;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.bbc-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.bbc-live-badge {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 18px;
+    padding: 6px 10px;
+    background: #b81d24;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+}
+
+.bbc-hero-title {
+    margin: 0;
+    max-width: 650px;
+    font-size: 38px;
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.bbc-hero-desc {
+    max-width: 620px;
+    margin: 18px 0 0;
+    color: #d5d5d5;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.bbc-hero-content a {
+    transition: color 0.2s ease;
+}
+
+.bbc-hero-content a:hover {
+    color: #b81d24 !important;
+}
+
+.bbc-hero-media {
+    min-height: 360px;
+    background: #111;
+}
+
+.bbc-hero-media img,
+.bbc-hero-media video {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================================
+   ОСНОВНОЙ МАТЕРИАЛ
+========================================================= */
+
+.home-container section {
+    margin-top: 35px;
+}
+
+.home-container section > a {
+    display: block;
+}
+
+.home-container section > a > div {
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.home-container section > a:hover > div {
+    background: #fafafa;
+}
+
+.home-container section h2 {
+    color: #121212;
+}
+
+.home-container section span {
+    transition: color 0.2s ease;
+}
+
+.home-container section > a:hover span {
+    color: #8f141a !important;
+}
+
+.home-container section img,
+.home-container section video {
+    transition: transform 0.35s ease;
+}
+
+.home-container section > a:hover img,
+.home-container section > a:hover video {
+    transform: scale(1.03);
+}
+
+/* =========================================================
+   ЛЕНТА НОВОСТЕЙ
+========================================================= */
+
+.bbc-feed-section {
+    margin-top: 40px;
+}
+
+.feed-header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
+    border-bottom: 3px solid #121212;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.live-indicator {
+    color: #b81d24;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   СПИСОК НОВОСТЕЙ
+========================================================= */
+
+.bbc-media-feed-list {
+    width: 100%;
+}
+
+.bbc-media-feed-card-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.bbc-media-feed-card-wrapper:last-child {
+    border-bottom: 0;
+}
+
+.bbc-media-feed-card-wrapper > a {
+    display: block;
+    color: inherit;
+}
+
+.bbc-media-feed-item {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 25px;
+    padding: 22px 0;
+    transition:
+        background 0.2s ease,
+        padding 0.2s ease;
+}
+
+.bbc-media-feed-card-wrapper:hover .bbc-media-feed-item {
+    background: #fafafa;
+}
+
+/* =========================================================
+   ПРЕВЬЮ
+========================================================= */
+
+.feed-thumbnail-mock {
+    width: 100%;
+    height: 180px;
+    min-height: 180px;
+    overflow: hidden;
+    position: relative;
+    background: #111;
+}
+
+.uploaded-thumbnail-media {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.bbc-media-feed-card-wrapper:hover .uploaded-thumbnail-media {
+    transform: scale(1.04);
+}
+
+/* =========================================================
+   ТЕКСТ НОВОСТИ
+========================================================= */
+
+.feed-item-content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feed-meta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 8px;
+}
+
+.feed-time {
+    color: #b81d24;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.feed-cat {
+    padding-left: 9px;
+    border-left: 1px solid #bbb;
+    color: #555;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.feed-news-title {
+    margin: 0;
+    color: #121212;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 800;
+    transition: color 0.2s ease;
+}
+
+.bbc-media-feed-card-wrapper:hover .feed-news-title {
+    color: #b81d24;
+}
+
+.feed-news-snippet {
+    max-width: 800px;
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.feed-item-content > span:last-child {
+    width: fit-content;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.bbc-media-feed-card-wrapper:hover .feed-item-content > span:last-child {
+    color: #8f141a !important;
+    transform: translateX(3px);
+}
+
+/* =========================================================
+   АДАПТИВНОСТЬ — ПЛАНШЕТ
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .home-container {
+        padding: 0 18px 45px;
+    }
+
+    .section-main-title {
+        font-size: 40px;
+    }
+
+    .bbc-hero-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .bbc-hero-content {
+        padding: 30px;
+    }
+
+    .bbc-hero-title {
+        font-size: 32px;
+    }
+
+    .bbc-hero-media {
+        min-height: 280px;
+    }
+
+    .bbc-hero-media img,
+    .bbc-hero-media video {
+        min-height: 280px;
+    }
+
+    .bbc-media-feed-item {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .feed-thumbnail-mock,
+    .uploaded-thumbnail-media {
+        min-height: 150px;
+        height: 150px;
+    }
+
+    .feed-news-title {
+        font-size: 19px;
+    }
+}
+
+/* =========================================================
+   АДАПТИВНОСТЬ — МОБИЛЬНЫЕ
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .home-container {
+        padding: 0 14px 35px;
+    }
+
+    .section-header-banner {
+        padding: 25px 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-main-title {
+        font-size: 34px;
+        letter-spacing: -0.8px;
+    }
+
+    .section-main-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .bbc-hero-banner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .bbc-hero-content {
+        padding: 25px 20px;
+    }
+
+    .bbc-hero-title {
+        font-size: 27px;
+        line-height: 1.15;
+    }
+
+    .bbc-hero-desc {
+        font-size: 14px;
+    }
+
+    .bbc-hero-media {
+        min-height: 220px;
+    }
+
+    .bbc-hero-media img,
+    .bbc-hero-media video {
+        min-height: 220px;
+    }
+
+    /* Главный материал */
+    .home-container section > a > div {
+        display: flex !important;
+        flex-direction: column;
+        gap: 18px !important;
+    }
+
+    .home-container section h2 {
+        font-size: 24px !important;
+    }
+
+    .home-container section > a > div > div:last-child {
+        height: 220px !important;
+        min-height: 220px;
+    }
+
+    /* Заголовок ленты */
+    .feed-header-line {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    /* Карточки */
+    .bbc-media-feed-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .feed-thumbnail-mock {
+        width: 100%;
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .uploaded-thumbnail-media {
+        width: 100%;
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .feed-item-content {
+        display: block;
+    }
+
+    .feed-news-title {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .feed-news-snippet {
+        font-size: 14px;
+    }
+}
+
+/* =========================================================
+   ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .section-main-title {
+        font-size: 30px;
+    }
+
+    .bbc-hero-title {
+        font-size: 24px;
+    }
+
+    .bbc-hero-content {
+        padding: 20px 16px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .feed-thumbnail-mock,
+    .uploaded-thumbnail-media {
+        height: 185px;
+        min-height: 185px;
+    }
+
+    .feed-news-title {
+        font-size: 18px;
+    }
+}
+
+/* =========================================================
+   FIX: ЛЕНТА НЕ ДОЛЖНА БЫТЬ FIXED / STICKY
+========================================================= */
+
+.bbc-feed-section {
+    position: static !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+}
+
+.bbc-media-feed-list {
+    position: static !important;
+}
+
+.bbc-media-feed-card-wrapper {
+    position: static !important;
+}
+
+.bbc-media-feed-item {
+    position: relative;
+}
+
+/* Ссылки занимают только размер своей карточки */
+.bbc-media-feed-card-wrapper > a {
+    position: static;
+    width: 100%;
+}
+
+/* Никаких огромных карточек */
+.bbc-media-feed-item {
+    min-height: 0 !important;
+}
+
+/* Картинка фиксированной высоты */
+.feed-thumbnail-mock {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+}
+
+.uploaded-thumbnail-media {
+    height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+}
+
+/* Чтобы длинный текст не раздувал карточку */
+.feed-item-content {
+    min-height: 0;
+}
+
+/* Вся карточка кликабельная */
+.bbc-media-feed-card-wrapper > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Курсор */
+.bbc-media-feed-card-wrapper,
+.bbc-media-feed-card-wrapper > a,
+.bbc-media-feed-item {
+    cursor: pointer;
+}

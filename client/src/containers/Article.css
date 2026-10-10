@@ -1,0 +1,970 @@
+.article-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 45px 30px 90px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* =========================================================
+   ARTICLE CONTAINER
+========================================================= */
+
+.article-container {
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ARTICLE HEADER
+========================================================= */
+
+.article-header {
+    margin-bottom: 45px;
+}
+
+.article-category {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+    padding-left: 12px;
+
+    border-left: 3px solid #b81d24;
+
+    color: #b81d24;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.article-title {
+    max-width: 1100px;
+
+    margin: 0 0 18px;
+
+    color: #111111;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(40px, 5vw, 68px);
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.8px;
+}
+
+.article-time {
+    color: #888888;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   MAIN ARTICLE
+   PHOTO | RED LINE | TEXT
+========================================================= */
+
+.article-main-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        1px
+        minmax(0, 1fr);
+
+    column-gap: 42px;
+
+    padding-top: 38px;
+
+    border-top: 1px solid #dedede;
+}
+
+
+/* =========================================================
+   MEDIA
+========================================================= */
+
+.article-media {
+    width: 100%;
+    height: 650px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+.article-media img,
+.article-media video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.article-media video {
+    background: #111111;
+}
+
+.article-no-media {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: #999999;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RED DIVIDER
+========================================================= */
+
+.article-divider {
+    width: 1px;
+    height: 100%;
+
+    min-height: 650px;
+
+    background: #b81d24;
+}
+
+
+/* =========================================================
+   TEXT COLUMN
+========================================================= */
+
+.article-text-column {
+    min-width: 0;
+
+    padding: 5px 5px 0 5px;
+}
+
+
+/* =========================================================
+   LEAD
+========================================================= */
+
+.article-lead {
+    margin: 0 0 32px;
+
+    color: #222222;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ARTICLE TEXT
+========================================================= */
+
+.article-text {
+    color: #333333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+}
+
+.article-text p {
+    margin: 0 0 25px;
+}
+
+.article-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   COMMENTS
+========================================================= */
+
+.article-comments {
+    width: 100%;
+
+    margin-top: 85px;
+
+    padding-top: 38px;
+
+    border-top: 4px solid #111111;
+}
+
+
+/* =========================================================
+   COMMENTS HEADER
+========================================================= */
+
+.article-comments-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.article-comments-header h2 {
+    margin: 0;
+
+    color: #111111;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 900;
+}
+
+.article-comments-header span {
+    min-width: 28px;
+    height: 28px;
+
+    padding: 0 8px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #b81d24;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   COMMENT FORM
+========================================================= */
+
+.comment-form {
+    width: 100%;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.comment-name-input {
+    width: 100%;
+
+    height: 52px;
+
+    margin-bottom: 12px;
+
+    padding: 15px 18px;
+
+    box-sizing: border-box;
+
+    background: #fafafa;
+
+    border: 1px solid #d5d5d5;
+
+    color: #222222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.comment-name-input:focus {
+    background: #ffffff;
+
+    border-color: #111111;
+}
+
+.comment-name-input::placeholder {
+    color: #999999;
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.comment-form textarea {
+    width: 100%;
+
+    min-height: 140px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    resize: vertical;
+
+    background: #fafafa;
+
+    border: 1px solid #d5d5d5;
+
+    color: #222222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.comment-form textarea:focus {
+    background: #ffffff;
+
+    border-color: #111111;
+}
+
+.comment-form textarea::placeholder {
+    color: #999999;
+}
+
+
+/* =========================================================
+   COMMENT FORM BOTTOM
+========================================================= */
+
+.comment-form-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.comment-form-bottom span {
+    color: #999999;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 11px;
+}
+
+.comment-form-bottom button {
+    padding: 12px 22px;
+
+    background: #b81d24;
+
+    color: #ffffff;
+
+    border: none;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.comment-form-bottom button:hover {
+    background: #8e151b;
+
+    transform: translateY(-1px);
+}
+
+.comment-form-bottom button:disabled {
+    background: #999999;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   COMMENT MESSAGES
+========================================================= */
+
+.comment-error {
+    margin: 12px 0 0;
+
+    color: #b81d24;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+}
+
+.comment-success {
+    margin: 12px 0 0;
+
+    color: #2d7a3e;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COMMENTS LIST
+========================================================= */
+
+.comments-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   SINGLE COMMENT
+========================================================= */
+
+.comment-item {
+    padding: 0 0 25px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.comment-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+.comment-author {
+    color: #111111;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+.comment-header time {
+    color: #999999;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.comment-text {
+    max-width: 950px;
+
+    margin: 0;
+
+    color: #333333;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================================================
+   EMPTY COMMENTS
+========================================================= */
+
+.comments-empty {
+    padding: 35px 20px;
+
+    background: #f7f7f7;
+
+    text-align: center;
+}
+
+.comments-empty p {
+    margin: 0 0 7px;
+
+    color: #555555;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+}
+
+.comments-empty span {
+    color: #999999;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   LOADING COMMENTS
+========================================================= */
+
+.comments-loading {
+    padding: 25px 0;
+
+    color: #999999;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.article-not-found {
+    max-width: 700px;
+
+    margin: 100px auto;
+
+    text-align: center;
+}
+
+.article-not-found-code {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #b81d24;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.article-not-found h1 {
+    margin: 0 0 15px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 40px;
+}
+
+.article-not-found p {
+    margin-bottom: 30px;
+
+    color: #777777;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.article-back-home {
+    color: #111111;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+}
+
+.article-back-home:hover {
+    color: #b81d24;
+}
+
+
+/* =========================================================
+   LOADING ARTICLE
+========================================================= */
+
+.article-loading {
+    max-width: 700px;
+
+    margin: 100px auto;
+
+    text-align: center;
+}
+
+.article-loading-line {
+    width: 100%;
+    height: 3px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+.article-loading-line::after {
+    content: "";
+
+    display: block;
+
+    width: 30%;
+    height: 100%;
+
+    background: #b81d24;
+
+    animation:
+        articleLoading
+        1.2s
+        infinite
+        ease-in-out;
+}
+
+.article-loading p {
+    color: #888888;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+}
+
+@keyframes articleLoading {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(350%);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .article-page {
+        padding: 35px 22px 70px;
+    }
+
+    .article-title {
+        font-size: 50px;
+    }
+
+    .article-main-layout {
+        column-gap: 28px;
+    }
+
+    .article-media {
+        height: 520px;
+    }
+
+    .article-divider {
+        min-height: 520px;
+    }
+
+    .article-lead {
+        font-size: 20px;
+    }
+
+    .article-text {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .article-page {
+        padding: 25px 16px 60px;
+    }
+
+    .article-header {
+        margin-bottom: 30px;
+    }
+
+    .article-title {
+        font-size: 38px;
+
+        line-height: 1.08;
+
+        letter-spacing: -1px;
+    }
+
+    .article-main-layout {
+
+        grid-template-columns: 1fr;
+
+        row-gap: 0;
+
+        column-gap: 0;
+
+        padding-top: 25px;
+    }
+
+
+    /* ФОТО */
+
+    .article-media {
+        height: 400px;
+    }
+
+
+    /* КРАСНАЯ ЛИНИЯ */
+
+    .article-divider {
+        width: 100%;
+        height: 1px;
+
+        min-height: 1px;
+
+        margin: 28px 0;
+
+        background: #b81d24;
+    }
+
+
+    /* ТЕКСТ */
+
+    .article-text-column {
+        padding: 0;
+    }
+
+    .article-lead {
+        margin-bottom: 25px;
+
+        font-size: 19px;
+
+        line-height: 1.5;
+    }
+
+    .article-text {
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+
+    /* COMMENTS */
+
+    .article-comments {
+        margin-top: 60px;
+
+        padding-top: 28px;
+    }
+
+    .article-comments-header h2 {
+        font-size: 25px;
+    }
+
+    .comment-form textarea {
+        min-height: 120px;
+
+        padding: 15px;
+    }
+
+    .comment-form-bottom {
+        align-items: flex-end;
+    }
+
+    .comment-form-bottom button {
+        padding: 11px 17px;
+    }
+
+    .comment-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .comment-header time {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .article-title {
+        font-size: 32px;
+    }
+
+    .article-media {
+        height: 300px;
+    }
+
+    .article-comments-header h2 {
+        font-size: 22px;
+    }
+
+    .comment-form-bottom {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .comment-form-bottom button {
+        width: 100%;
+    }
+}

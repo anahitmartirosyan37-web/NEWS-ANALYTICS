@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background-color: #121212;
+    border-bottom: 2px solid #b81d24;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+
+.logo-brand {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.logo-sub-arm {
+    font-size: 5px;
+    font-weight: 500;
+    color: #999999;
+    letter-spacing: 0.4px;
+    margin-bottom: 2px;
+}
+
+.logo-sub-eng {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b81d24;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #b81d24;
+    padding-bottom: 2px;
+}
