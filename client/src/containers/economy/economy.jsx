@@ -136,7 +136,7 @@ export const EconomyPage = () => {
                         /* Карточки */
                         <div className="economy-news-grid">
                             {economyNews.map((news) => {
-                                const id = news._id || news.id;
+                                const id = news.id;
 
                                 const image =
                                     news.mediaUrl ||
