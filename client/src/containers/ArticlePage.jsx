@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Article.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://news-analytics-5or6.vercel.app";
 
 export const ArticlePage = () => {
 

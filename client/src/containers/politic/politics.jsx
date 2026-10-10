@@ -14,7 +14,7 @@ export const PoliticsPage = () => {
                 setError("");
 
                 const response = await fetch(
-                    "http://localhost:5000/api/articles"
+                    "https://news-analytics-5or6.vercel.app/api/articles"
                 );
 
                 if (!response.ok) {

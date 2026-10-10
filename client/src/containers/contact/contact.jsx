@@ -20,7 +20,7 @@ export const ContactPage = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/subscribers/subscribe",
+                "https://news-analytics-5or6.vercel.app/api/subscribers/subscribe",
                 {
                     method: "POST",
                     headers: {
